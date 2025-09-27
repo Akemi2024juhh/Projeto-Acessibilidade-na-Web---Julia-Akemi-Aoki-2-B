@@ -2,19 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-alto-contraste: #FF7F00;
-    --preto-forte: #1A1A1A;
-    --cinza-escuro: #222222;
+    --laranja-claro: #FF862A;
+    --preto-forte: #111111;
+    --branco: #FFFFFF;
 }
 
 body {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
-    color: var(--cinza-escuro);
+    color: var(--preto-forte);
 }
 
 header {
-    background-color: #ffffff;
+    background-color: var(--branco);
 }
 
 section {
@@ -22,12 +22,12 @@ section {
 }
 
 .nav-link {
-    color: var(--laranja-alto-contraste);
-    font-weight: 600;
+    color: var(--laranja-claro);
+    font-weight: 700;
 }
 
 .inicio-fundo {
-    background-image: url('img/4965007.jpg');
+    background-image: url('https://github.com/alura-cursos/site-acessivel/raw/aula-05/img/4965007.jpg');
     background-size: cover;
     background-position: right;
     border-radius: 80px;
@@ -53,25 +53,15 @@ section {
 }
 
 .botao-inicio {
-    background-color: var(--laranja-alto-contraste);
-    color: #ffffff;
+    background-color: var(--laranja-claro);
     border-radius: 30px;
     border: none;
     width: 14em;
     height: 3em;
-    font-weight: bold;
 }
 
 .display-4 {
-    text-shadow: -2px 2px var(--preto-forte);
-    color: var(--preto-forte);
-}
-
-h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color: var(--preto-forte);
+    text-shadow: -5px 5px var(--laranja-claro);
 }
 
 #tropicalia {
@@ -79,8 +69,8 @@ h2 {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-                url('img/flor-esquerda.png') bottom left no-repeat;
+    background: url('https://github.com/alura-cursos/site-acessivel/raw/aula-05/img/flor.png') top right no-repeat,
+        url('https://github.com/alura-cursos/site-acessivel/raw/aula-05/img/flor-esquerda.png') bottom left no-repeat;
     background-size: 180px 180px;
 }
 
@@ -92,39 +82,43 @@ h2 {
     z-index: 1;
 }
 
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    color: var(--laranja-claro);
+}
+
 #galeria {
     background-color: #FAF4F4;
 }
 
 .fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background: url('https://github.com/alura-cursos/site-acessivel/raw/aula-05/img/flor-bottom-direita.png') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
 #contato {
-    background-image: url('img/4965007.jpg');
+    background-image: url('https://github.com/alura-cursos/site-acessivel/raw/aula-05/img/4965007.jpg');
     background-size: cover;
     padding: 4rem 0;
 }
 
 .formulario {
-    background-color: #ffffff;
+    background-color: var(--branco);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     font-weight: bold;
 }
 
 .formulario button {
-    background-color: var(--laranja-alto-contraste);
-    color: #ffffff;
+    background-color: var(--laranja-claro);
     border: none;
     font-weight: bold;
 }
 
 .form-control {
     background-color: #F1EDEF;
-    color: var(--preto-forte);
 }
 
 .menu-acessibilidade{
