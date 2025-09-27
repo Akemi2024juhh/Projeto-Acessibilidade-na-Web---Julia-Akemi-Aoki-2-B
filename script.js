@@ -21,12 +21,4 @@ document.addEventListener('DOMContentLoaded', function () {
         tamanhoAtualFonte -= 0.1;
         document.body.style.fontSize = `${tamanhoAtualFonte}rem`
     })
-
-    // Mensagem de confirmação ao enviar formulário
-    const form = document.getElementById('form-contato');
-    form.addEventListener('submit', function(e){
-        e.preventDefault();
-        alert('Mensagem enviada com sucesso! 🎉');
-        form.reset();
-    });
-});
+})
