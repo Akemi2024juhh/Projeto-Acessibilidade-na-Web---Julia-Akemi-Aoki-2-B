@@ -2,19 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
 :root {
-    --laranja-claro: #FF862A;
-    --preto-forte: #111111;
-    --branco: #FFFFFF;
+    --laranja-intenso: #FF4500;
+    --azul-escuro: #001F3F;
+    --fundo-claro: #E8F0FF;
+    --branco-contraste: #FFFFFF;
 }
 
 body {
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    color: var(--preto-forte);
+    font-family: 'Montserrat';
+    color: var(--azul-escuro);
+    background-color: var(--fundo-claro);
 }
 
 header {
-    background-color: var(--branco);
+    background-color: var(--branco-contraste);
 }
 
 section {
@@ -22,19 +24,18 @@ section {
 }
 
 .nav-link {
-    color: var(--laranja-claro);
-    font-weight: 700;
+    color: var(--laranja-intenso);
+    font-weight: 600;
 }
 
 .inicio-fundo {
-    background-image: url('https://github.com/alura-cursos/site-acessivel/raw/aula-05/img/4965007.jpg');
+    background-image: url('https://github.com/alura-cursos/site-acessivel/blob/aula-05/img/4965007.jpg?raw=true');
     background-size: cover;
     background-position: right;
     border-radius: 80px;
     width: 100%;
     height: 606px;
     padding: 40px;
-    margin: 0 auto;
 }
 
 .img-inicio {
@@ -53,15 +54,17 @@ section {
 }
 
 .botao-inicio {
-    background-color: var(--laranja-claro);
+    background-color: var(--laranja-intenso);
     border-radius: 30px;
     border: none;
     width: 14em;
     height: 3em;
+    align-content: center;
+    color: var(--branco-contraste);
 }
 
 .display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
+    text-shadow: -5px 5px var(--laranja-intenso);
 }
 
 #tropicalia {
@@ -69,8 +72,8 @@ section {
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('https://github.com/alura-cursos/site-acessivel/raw/aula-05/img/flor.png') top right no-repeat,
-        url('https://github.com/alura-cursos/site-acessivel/raw/aula-05/img/flor-esquerda.png') bottom left no-repeat;
+    background: url('https://github.com/alura-cursos/site-acessivel/blob/aula-05/img/flor.png?raw=true') top right no-repeat,
+        url('https://github.com/alura-cursos/site-acessivel/blob/aula-05/img/flor-esquerda.png?raw=true') bottom left no-repeat;
     background-size: 180px 180px;
 }
 
@@ -85,64 +88,65 @@ section {
 h2 {
     font-family: 'Lemon', serif;
     font-size: 2.5em;
-    color: var(--laranja-claro);
+    color: var(--laranja-intenso);
 }
 
 #galeria {
-    background-color: #FAF4F4;
+    background-color: var(--fundo-claro);
 }
 
 .fundo-galeria {
-    background: url('https://github.com/alura-cursos/site-acessivel/raw/aula-05/img/flor-bottom-direita.png') bottom right no-repeat;
+    background: url('https://github.com/alura-cursos/site-acessivel/blob/aula-05/img/flor-bottom-direita.png?raw=true') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
 #contato {
-    background-image: url('https://github.com/alura-cursos/site-acessivel/raw/aula-05/img/4965007.jpg');
+    background-image: url('https://github.com/alura-cursos/site-acessivel/blob/aula-05/img/4965007.jpg?raw=true');
     background-size: cover;
     padding: 4rem 0;
 }
 
 .formulario {
-    background-color: var(--branco);
+    background-color: var(--branco-contraste);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-weight: bold;
 }
 
 .formulario button {
-    background-color: var(--laranja-claro);
+    background-color: var(--laranja-intenso);
     border: none;
     font-weight: bold;
+    color: var(--branco-contraste);
 }
 
 .form-control {
     background-color: #F1EDEF;
 }
 
-.menu-acessibilidade{
+.menu-acessibilidade {
     position: fixed;
-    top:2rem;
-    right:20px;
+    top: 2rem;
+    right: 20px;
     z-index: 1000;
 }
 
-.rotacao-botao{
+.rotacao-botao {
     transform: rotate(-90deg);
     transform-origin: right center;
 }
 
-.opcoes-acessibilidade{
-    margin-top:10px;
+.opcoes-acessibilidade {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.opcoes-acessibilidade button{
+.opcoes-acessibilidade button {
     margin-bottom: 5px;
 }
 
-.apresenta-lista{
+.apresenta-lista {
     display: none;
 }
